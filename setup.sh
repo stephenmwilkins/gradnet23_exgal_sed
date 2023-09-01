@@ -45,3 +45,10 @@ pip install bagpipes
 
 # copy of the NIRCam filters to the bagpipes installation
 cp filters/* venv/lib/python3.10/site-packages/bagpipes/filters/
+
+# install wget if its not installed
+# brew install wget
+
+# download the bc03 synthesizer grid. This should be similar to that used by bagpipes
+mkdir grids
+wget -O cb07.hdf5  https://www.dropbox.com/scl/fi/w8hrnbmjw67f0xaqzqgei/bc03-2016-Miles_chabrier03-0.1-100_cloudy-c17.03.hdf5?rlkey=iqh1vqmuftrg02b1mmrk0ywcn&dl=1 
